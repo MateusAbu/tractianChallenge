@@ -2,13 +2,13 @@ import '@testing-library/jest-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { useCompany } from '../../shared/components/CompanyContext';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import Navbar  from '../components/Navbar';
+import Header  from '../components/Header';
 
 vi.mock('../../shared/components/CompanyContext', () => ({
   useCompany: vi.fn(),
 }));
 
-describe('Navbar', () => {
+describe('Header', () => {
   beforeEach(() => {
     (useCompany as any).mockReturnValue({
       selectedCompany: 'Apex Unit',
@@ -16,8 +16,8 @@ describe('Navbar', () => {
     });
   });
 
-  test('renders Navbar and menu items', () => {
-    render(<Navbar />);
+  test('renders Header and menu items', () => {
+    render(<Header />);
 
     expect(screen.getByAltText('Tractian Logo')).toBeInTheDocument();
 
@@ -27,7 +27,7 @@ describe('Navbar', () => {
   });
 
   test('highlights the selected button and updates selection on click', () => {
-    render(<Navbar />);
+    render(<Header />);
 
     const TobiasButton = screen.getByText('Tobias Unit');
 

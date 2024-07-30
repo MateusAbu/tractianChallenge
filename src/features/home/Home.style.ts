@@ -16,7 +16,7 @@ export const Content = styled.div`
   box-sizing: border-box;
 `;
 
-export const Navbar = {
+export const Header = {
   Container: styled.div`
     display: flex;
     height: 5%;

@@ -1,13 +1,13 @@
 import React, { ReactElement } from 'react';
-import Navbar from './Navbar';
 import { Container, Content } from '../Home.style';
+import Header from './Header';
 
 const Home: React.FC<{
   children: ReactElement;
 }> = ({ children }) => {
   return (
     <Container>
-      <Navbar />
+      <Header />
       <Content>
         {children}
       </Content>

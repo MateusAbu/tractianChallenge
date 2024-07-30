@@ -11,7 +11,6 @@ import { useCompany } from '../../shared/components/CompanyContext';
 import { renderComponentIcons } from './RenderTreeIcon';
 
 const TreeComponent: React.FC<TreeComponentProps> = ({ treeData, filter }) => {
-  console.log(treeData)
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
   const { setSelectedComponent } = useCompany();

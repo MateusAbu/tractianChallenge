@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Navbar as S } from '../Home.style';
+import { Header as S } from '../Home.style';
 import logo from '../../../assets/LOGO TRACTIAN.png';
 import { useCompany } from '../../shared/components/CompanyContext';
 
-const Navbar: React.FC = () => {
+const Header: React.FC = () => {
   const { selectedCompany, setSelectedCompany } = useCompany();
   const [selectedUnit, setSelectedUnit] = useState(selectedCompany);
 
@@ -36,4 +36,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar;
+export default Header;
