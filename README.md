@@ -8,7 +8,6 @@ Este projeto é uma aplicação de visualização que permite aos usuários visu
 ![TypeScript](https://img.shields.io/badge/-typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6)
 ![MUI](https://img.shields.io/badge/-mui-black?style=for-the-badge&logoColor=white&logo=mui&color=007FFF)
 ![Vite](https://img.shields.io/badge/-vite-black?style=for-the-badge&logoColor=white&logo=vite&color=646CFF)
-Para configurar e rodar o projeto, siga os passos abaixo:
 
 ## Instalação de Dependências
 
